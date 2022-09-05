@@ -13,6 +13,19 @@ body{
 
 /* header sytles */
 
+.bg-papel-bottom{
+    height: 130px;
+    background-image: url('../imagens/bg-rasgado-branco-base.png');
+    background-size: 100%;
+    background-position: 0 50px; /* mexendo na paste rasgada */
+    background-repeat: no-repeat;
+
+}
+
+.logo{
+    height: 80px;
+}
+
 /* BARRA DE BUSCA */
 .searchbar{
   /* FUNDO DA BARRA DE PESQUISA */  
