@@ -1,7 +1,10 @@
 /* paleta de cores 
 orange : #e2a355
 orange clean: #deb37e
-gray: #7f7770 */
+gray: #7f7770
+dark gray:#68635f
+Light gray: c3bfbc*/
+
 
 
 body{
@@ -9,11 +12,14 @@ body{
 }
 
 /* header sytles */
+
+/* BARRA DE BUSCA */
 .searchbar{
+  /* FUNDO DA BARRA DE PESQUISA */  
     margin-bottom: auto;
     margin-top: auto;
     height: 60px;
-    background-color: #353b48;
+    background-color: #c3bfbc;
     border-radius: 30px;
     padding: 10px;
     }
@@ -30,18 +36,21 @@ body{
     }
 
     .searchbar:hover > .search_input{
+   /* | ESSE NEGOCIO DA PESQUISA */     
     padding: 0 10px;
-    width: 450px;
-    caret-color:red;
+    width: 200px;
+    caret-color:#e2a355;
     transition: width 0.4s linear;
     }
 
     .searchbar:hover > .search_icon{
+  /* COR DA LUPA */      
     background: white;
-    color: #e74c3c;
+    color: #e2a355;
     }
 
     .search_icon{
+   /* ICONE DA LUPA QUANDOO ESTIVER FECHADO */     
     height: 40px;
     width: 40px;
     float: right;
@@ -49,6 +58,15 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color:white;
+    color: #68635f;
     text-decoration:none;
     }
+
+  /* CELULAR E TABLET */
+
+  @media screen and (max-width: 992px) {
+      
+}
+
+
+  
