@@ -26,9 +26,9 @@
 
 <body>
 
-    <header>
+    <header class="fixed-top">
         <!-- place navbar here -->
-        <nav class="navbar navbar-expand-sm bg-papel-bottom pt-0 pb-3"> <!--PT e PB é para definir o padding-->
+        <nav class="navbar navbar-expand-sm bg-papel-bottom pt-0 pb-4"> <!--PT e PB é para definir o padding-->
             <div class="container">
                 <a class="navbar-brand" href="#"> <img src="imagens/logo.png" class="logo" alt="logotipo Summer Exploring"></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -68,33 +68,34 @@
         </nav>
 
     </header>
-    <main>
-
-        <section id="banner-topo">
+    <main class="col-lg-10 offset-lg-1"> <!--Col é a largura e Offset é as colunas (centralizar)-->
+        <section id="banner-topo" class="d-none d-md-block"> <!--primeiro section, foi banner, carrossel, toda a parte de cima-->
             <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
-                    <!--essas sao as-->
+                    <!--essas sao as div do carrossel-->
                     <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
                     <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
                     <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                   <!--esses são os indicadores, entao se quiser colocar 5 fotos, preimeiro tem que colorcar os cincos li--> 
                 </ol>
                 <div class="carousel-inner" role="listbox">
+                 <!--o carrossel sempre fica dentro do div-->   
                     <div class="carousel-item active">
-                        <img src="imagens/amigos-foto2.jpg" class="w-100 d-block" alt="First slide">
+                        <img src="imagens/banner-topo-aventureira.jpg" class="w-100 d-block" alt="First slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Title</h3>
                             <p>Description</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="holder.js/900x500/auto/#666:#444/text:Second slide" class="w-100 d-block" alt="Second slide">
+                        <img src="imagens/banner-topo-jeep.jpg" class="w-100 d-block" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Title</h3>
                             <p>Description</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="holder.js/900x500/auto/#666:#444/text:Third slide" class="w-100 d-block" alt="Third slide">
+                        <img src="imagens/banner-topo-montanha.jpg" class="w-100 d-block" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Title</h3>
                             <p>Description</p>
@@ -110,7 +111,49 @@
                     <span class="visually-hidden">Next</span>
                   </button>
             </div>
+        </section>
 
+        <section id="bora" class="my-4 bg-folhas-left">
+            <h2 class="text-center fw-bold text-uppercase fs-1 txt-laranja">Bora lá</h2>
+             <p class="text-center col-md-6 offset-md-3 mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, inventore numquam exercitationem aperiam sapiente explicabo? Eum, consectetur accusamus in aspernatur, nam veritatis dolore quibusdam repellendus tenetur quam enim voluptates officia!</p>
+
+            <div class="row">
+             <div class="col-md-4">
+            <div class="card bg-cinza-op5 text-light rounded-0 border-0">
+                <img class="card-img-top rounded-0" src="./imagens/amigos-grupo2.jpg" alt="Title">
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet numquam beatae qui, adipisci reiciendis non. Nihil, et temporibus sed velit iure dolores sit sapiente provident vero pariatur, architecto ea nesciunt.</p>
+                </div>
+            </div>
+             </div>
+
+             <div class="col-md-4">
+                 <div class="card bg-cinza-op5 text-light rounded-0 border-0">
+                     <img class="card-img-top rounded-0" src="./imagens/aventureira-grupo2.jpg" alt="Title">
+                     <div class="card-body">
+                         <h4 class="card-title">Title</h4>
+                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit neque sint explicabo et commodi. Provident sequi dolor nulla neque nobis a dicta? Nulla consequuntur minima blanditiis rem corrupti, neque doloribus?</p>
+                     </div>
+                 </div>
+
+             </div>
+
+             <div class="col-md-4">
+                 <div class="card bg-cinza-op5 text-light rounded-0 border-0">
+                     <img class="card-img-top rounded-0" src="./imagens/aventureira-imagem3-grupo2.jpg" alt="Title">
+                     <div class="card-body">
+                         <h4 class="card-title">Title</h4>
+                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ab tempore molestias, quis saepe necessitatibus molestiae magni veniam velit officiis, quos numquam quasi officia possimus accusantium cumque pariatur vero ullam.</p>
+                     </div>
+                 </div>
+
+             </div>
+
+            </div>
+         <div class="d-grid col-4 mx-auto mt-4">
+             <button class="roundend-5 border-0 bg-cinza text-light p-3">Show More</button>
+         </div>
         </section>
 
 
