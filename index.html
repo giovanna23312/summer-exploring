@@ -310,10 +310,9 @@
           <input type="tel" name="telefone" id="" class="form-control" placeholder="Inclua DDD">
         </div>
 
-        <div class="mb-3 needs-validation" novalidate> 
+        <div class="mb-3">
           <label for="senha" class="form-label">Digite uma senha</label>
-          <input type="password" class="form-control" name="senha" id="" minlength="8" placeholder="minimo 8 caracteres">
-          <span class="invalid-feedback">Minimo 8 caracteres</span>
+          <input type="password" class="form-control" name="senha" id="" placeholder="">
         </div>
 
         <div class="mb-3">
@@ -322,26 +321,19 @@
           <div id="fileHelpId" class="form-text">Somente JPG, PNG ou GIF</div>
         </div>
 
-        <div class="mb-3 col-md-6"> 
+        <div class="mb-3 col-md-6">
           <label for="estado" class="form-label">Selecione o seu Estado (UF)</label>
-          <select class="form-control" name="estado" id="estado"> <!--os ID, FOR e NAME tem que ser inscrito tudo em minusculos-->
-            <option value="São Paulo">São Paulo</option>
-            <option value="Minas Gerais">Minas Gerais</option>
-            <option value="Bahia">Bahia</option>
-            <option value="Pernambuco">Pernambuco</option>
+          <select class="form-control" name="estado" id="estado">
+            <option>Selecione</option>
           </select>
         </div>
 
         <div class="mb-3 col-md-6">
           <label for="cidade" class="form-label">Selecione a sua cidade</label>
           <select class="form-control" name="cidade" id="cidade">
-            <option value="São Paulo">São Paulo</option>
-            <option value="São José dos Campos">São José dos Campos</option>
-            <option value="Jacareí">Jacareí</option>
-            <option value="Caçapava">Caçapava</option>
+            <option>Selecione</option>
           </select>
         </div>
-
 
         <p class="m-0 mt-5">Selecione os destinos que gostaria de explorar:</p>
         <div class="form-check">
@@ -384,7 +376,7 @@
           <textarea class="form-control" name="mensagem" id="" rows="5" maxlength="256"></textarea>
         </div>
 
-        <input type="hidden" name="dt-cadastro" id="dt-cadastro" value="">  <!--Campo Oculto-->
+        <input type="hidden" name="dt-cadastro" id="dt-cadastro" value="">
 
         <button type="submit" class="btn btn-primary mb-5">Enviar</button>
 
@@ -397,6 +389,7 @@
   </footer>
 
   <!-- Bootstrap JavaScript Libraries -->
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>
@@ -407,7 +400,10 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  
   <script src="js/custom.js"></script>
+
+  
 </body>
 
 </html>
