@@ -310,7 +310,7 @@
           <input type="tel" name="telefone" id="" class="form-control" placeholder="Inclua DDD">
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 needs-validation" novalidate> 
           <label for="senha" class="form-label">Digite uma senha</label>
           <input type="password" class="form-control" name="senha" id="" minlength="8" placeholder="minimo 8 caracteres">
           <span class="invalid-feedback">Minimo 8 caracteres</span>
@@ -322,9 +322,9 @@
           <div id="fileHelpId" class="form-text">Somente JPG, PNG ou GIF</div>
         </div>
 
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-6"> 
           <label for="estado" class="form-label">Selecione o seu Estado (UF)</label>
-          <select class="form-control" name="estado" id="estado">
+          <select class="form-control" name="estado" id="estado"> <!--os ID, FOR e NAME tem que ser inscrito tudo em minusculos-->
             <option value="São Paulo">São Paulo</option>
             <option value="Minas Gerais">Minas Gerais</option>
             <option value="Bahia">Bahia</option>
@@ -384,7 +384,7 @@
           <textarea class="form-control" name="mensagem" id="" rows="5" maxlength="256"></textarea>
         </div>
 
-        <input type="hidden" name="dt-cadastro" id="dt-cadastro" value="">
+        <input type="hidden" name="dt-cadastro" id="dt-cadastro" value="">  <!--Campo Oculto-->
 
         <button type="submit" class="btn btn-primary mb-5">Enviar</button>
 
