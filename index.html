@@ -43,16 +43,16 @@
                   class="visually-hidden">(current)</span></a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link fw-bold" href="#">BORA LÁ</a>
+              <a class="nav-link fw-bold" href="#bora">BORA LÁ</a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link fw-bold" href="#">PROMOÇÃO</a>
+              <a class="nav-link fw-bold" href="#promocao">PROMOÇÃO</a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link fw-bold" href="#">EXPLORAR</a>
+              <a class="nav-link fw-bold" href="#explorar">EXPLORAR</a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link fw-bold" href="#">CONTATO</a>
+              <a class="nav-link fw-bold" href="#contato">CONTATO</a>
             </li>
           </ul>
           <form class="d-flex my-2 my-lg-0">
@@ -119,6 +119,7 @@
         </button>
       </div>
     </section>
+    
 
     <section id="bora" class="my-4 bg-folhas-left">
       <h2 class="text-center fw-bold text-uppercase fs-1 txt-laranja">
@@ -310,9 +311,10 @@
           <input type="tel" name="telefone" id="" class="form-control" placeholder="Inclua DDD">
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 needs-validation" novalidate>
           <label for="senha" class="form-label">Digite uma senha</label>
-          <input type="password" class="form-control" name="senha" id="" placeholder="">
+          <input required type="password" class="form-control" name="senha" id="" placeholder="" minlength="8">
+          <span class="invalid-feedback">Minimo 8 caracteres</span>
         </div>
 
         <div class="mb-3">
@@ -389,6 +391,16 @@
   </footer>
 
   <!-- Bootstrap JavaScript Libraries -->
+  <!-- <li class="nav-item me-3">
+    <a class="voltar-topo" href="#"></a>
+  </li> -->
+
+ 
+  <a href="#" id="go-top" class="seta"><i class="fas fa-arrow-up"></i></a>  <!--Botão para voltar para cima da pagina-->  
+
+
+  <!-- <a href="#"></a>
+  <button id="back-to-top">Voltar ao topo</button> -->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

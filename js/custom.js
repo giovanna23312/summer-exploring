@@ -51,17 +51,32 @@ fetch(api).then(resposta => resposta.json()).then(json => {
     options += `<option value=${json[index].nome}>${json[index].nome}</option>`
   }    
   select.innerHTML = options
-})
-
+})  
 }
 
+const rolagem = ()=> {
+const html = document.documentElement
+const seta = document.getElementById('go-top')
 
+
+/* Se a rolagem for maior que 550, a seta aparece 
+abaixo de 550 esconde */
+if (html.scrollTop > 220 ) {
+  // console.log('Monstra SETA ' + html.scrollTop)
+  seta.style.display = 'block'      /* //sempre quando queremos modificar o css no js é elemento.style.elemento(css) */
+} else {
+  // console.log('Esconde SETA ' + html.scrollTop)
+  seta.style.display = 'none'
+}
+}
 
 
 /* ---------------------------------------------------- */
 
 
 /* //////////// EVENTOS E EXECUÇÕES AUTOMÁTICAS  /////////// */
+
+
 
 getEstados()
 
@@ -100,4 +115,11 @@ document.getElementById('estado').addEventListener('change', function(){
 getCidadesByUf(this.value)
 })
 
+window.onscroll = ()=> rolagem()    //declarando o evento ( colocando a seta na tela, para quando o usuario fazer a rolagem aparecer )
 
+
+/* window.onscroll = ()=> {rolagem()};
+const rolagem = ()=> {
+const html = document.documentElement
+console.log(html.scrollTop)
+} */
